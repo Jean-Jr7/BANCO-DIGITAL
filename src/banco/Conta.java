@@ -9,10 +9,9 @@ public abstract class Conta implements iConta {
     protected int numero;
     protected double saldo;
     protected Cliente cliente;
-    protected int cpf;
+
     public Conta(Cliente cliente) {
         this.cliente = cliente;
-        this.cpf = cliente.getCpf();
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
     }

@@ -6,14 +6,11 @@ import banco.ContaPoupanca;
 public class Main {
     public static void main(String[] args) {
 
-        Cliente jeanj = new Cliente();
-        Cliente junior = new Cliente();
-        jeanj.setNome("jean ");
-        jeanj.setCpf(2313);
-        junior.setNome("junior de souza");
-        junior.setCpf(23213);
+        Cliente jeanj = new Cliente("jean", 322);
+        Cliente junior = new Cliente("junior",321);
         Conta cp = new ContaPoupanca(jeanj);
         Conta cc = new ContaCorrente(junior);
+
 
         cp.imprimirExtrato();
         cp.depositar(200);
