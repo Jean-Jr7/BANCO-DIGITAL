@@ -28,12 +28,5 @@ public class Main {
         cc.sacar(5);
         cc.trasnferir(55,cp);
         cc.imprimirExtrato();
-
-
-
-
-
-
-
     }
 }

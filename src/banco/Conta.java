@@ -60,15 +60,4 @@ public abstract class Conta implements iConta {
         return this.saldo >= valor;
     }
 
-    protected int getAgencia() {
-        return agencia;
-    }
-
-    protected int getNumero() {
-        return numero;
-    }
-
-    protected double getSaldo() {
-        return saldo;
-    }
 }
