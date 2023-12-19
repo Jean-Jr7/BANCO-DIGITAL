@@ -17,4 +17,5 @@ Criando um Banco Digital com Java e Orientação a Objetos
 
 
 ## Diagrama UML
-![BANCO DIGITAL](https://github.com/Jean-Jr7/BANCO-DIGITAL/assets/147209318/d79bbefa-5e5b-429f-ac99-c024ac171ea7)
+![BANCO-DIGITAL UML](https://github.com/Jean-Jr7/BANCO-DIGITAL/assets/147209318/168c9ccd-0828-4517-86a5-6e1d5cccc0e4)
+
