@@ -23,7 +23,7 @@ public class Main {
         cc.imprimirExtrato();
         cc.depositar(20);
         cc.sacar(5);
-        cc.trasnferir(55,cp);
+        cc.trasnferir(5,cp);
         cc.imprimirExtrato();
     }
 }

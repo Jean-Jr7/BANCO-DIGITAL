@@ -26,9 +26,6 @@ public abstract class Conta implements iConta {
 
     }
     public void sacar(double valor) {
-        verififcarSaldo(valor);
-    }
-    private  void verififcarSaldo(double valor){
         if (this.saldo >= valor) {
             this.saldo -= valor;
             System.out.format("Você sacou: R$%.2f\n", valor);
@@ -37,6 +34,7 @@ public abstract class Conta implements iConta {
         }
         System.out.format("Seu saldo atual: R$%.2f\n", this.saldo);
     }
+
     @Override
     public void depositar(double valor) {
         System.out.format("Voce depositou: %.2f",valor);
@@ -47,7 +45,7 @@ public abstract class Conta implements iConta {
     //Pega quem chama a transferencia e saca o saldo(valor) e transfere(deposita) para a conta desitino
     @Override
     public void trasnferir(double valor, Conta contaDestino) {
-        if (verificarSaldo(valor)) {
+        if (this.saldo>=valor) {
             this.sacar(valor);
             contaDestino.depositar(valor);
             System.out.println("Transferência concluída com sucesso");
@@ -55,8 +53,7 @@ public abstract class Conta implements iConta {
             System.out.println("Saldo insuficiente para realizar a transferência");
         }
     }
-    private boolean verificarSaldo(double valor) {
-        return this.saldo >= valor;
-    }
+
+
 
 }

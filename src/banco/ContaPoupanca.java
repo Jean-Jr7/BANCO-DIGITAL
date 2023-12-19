@@ -14,7 +14,8 @@ public class ContaPoupanca extends Conta {
     }
     public void sacar(double valor) {
         System.out.println("\n====SAQUE CONTA POUPANCA======\n");
-        super.sacar(valor);
+        super.sacar(valor + 2);
+
     }
     @Override
     public void depositar(double valor) {
