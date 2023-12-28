@@ -9,16 +9,16 @@ public class Cliente {
         this.cpf = cpf;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public int getCpf() {
         return cpf;
     }
 
     private void setCpf(int cpf) {
         this.cpf = cpf;
-    }
-
-    public String getNome() {
-        return nome;
     }
     private void setNome(String nome) {
         this.nome = nome;

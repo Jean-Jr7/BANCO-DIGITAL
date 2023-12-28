@@ -7,7 +7,7 @@ public abstract class Conta implements iConta {
     private static  int SEQUENCIAL = 1;
     protected int agencia;
     protected int numero;
-    protected double saldo;
+    private double saldo;
     protected Cliente cliente;
 
     public Conta(Cliente cliente) {
@@ -30,7 +30,7 @@ public abstract class Conta implements iConta {
             this.saldo -= valor;
             System.out.format("Você sacou: R$%.2f\n", valor);
         } else {
-            System.out.println("Saldo insuficiente");
+            System.out.println("Saldo insuficiente para saque");
         }
         System.out.format("Seu saldo atual: R$%.2f\n", this.saldo);
     }
@@ -53,7 +53,4 @@ public abstract class Conta implements iConta {
             System.out.println("Saldo insuficiente para realizar a transferência");
         }
     }
-
-
-
 }

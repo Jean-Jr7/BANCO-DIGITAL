@@ -6,10 +6,10 @@ import banco.ContaPoupanca;
 public class Main {
     public static void main(String[] args) {
 
-        Cliente jeanj = new Cliente("jean", 322);
-        Cliente junior = new Cliente("junior",321);
-        Conta cp = new ContaPoupanca(jeanj);
-        Conta cc = new ContaCorrente(junior);
+        Cliente um = new Cliente("jean", 322);
+        Cliente dois = new Cliente("junior",321);
+        Conta cp = new ContaPoupanca(um);
+        Conta cc = new ContaCorrente(dois);
 
 
         cp.imprimirExtrato();
