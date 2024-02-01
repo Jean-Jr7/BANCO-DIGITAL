@@ -2,7 +2,8 @@
 
 ## POO - Desafio
 
-Criando um Banco Digital com Java e Orientação a Objetos
+Criando um Banco Digital com Java Orientação a Objetos
+O proposto do desafio e por em praticas os pilares de POO
 
 
 ###### Comportamentos esperados:
